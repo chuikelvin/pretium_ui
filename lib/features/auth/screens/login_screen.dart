@@ -22,8 +22,7 @@ class _LoginScreenState extends State<LoginScreen> {
       final email = _emailController.text.trim();
       final password = _passwordController.text;
 
-      // TODO: Handle login logic'
-      print('Logging in with $email / $password');
+      Navigator.pushReplacementNamed(context, '/home');
     }
   }
 
