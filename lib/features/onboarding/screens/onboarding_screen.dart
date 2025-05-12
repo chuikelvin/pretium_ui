@@ -38,7 +38,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
         curve: Curves.easeInOut,
       );
     } else {
-      // TODO: Navigate to home or login
+      Navigator.pushReplacementNamed(context, '/login');
     }
   }
 
@@ -67,6 +67,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
               child: TextButton(
                 onPressed: () {
                   _controller.jumpToPage(_pages.length - 1);
+                  Navigator.pushReplacementNamed(context, '/login');
                 },
                 child: const Text(
                   'Skip',

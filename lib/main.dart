@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'core/theme/theme.dart';
 import 'features/onboarding/screens/onboarding_screen.dart';
+import 'features/auth/screens/login_screen.dart';
+import 'features/auth/screens/register_screen.dart';
 import 'features/auth/screens/splash_screen.dart';
 
 void main() {
@@ -21,6 +23,9 @@ class MyApp extends StatelessWidget {
       routes: {
         '/splash': (context) => const SplashScreen(),
         '/': (context) => const OnboardingScreen(),
+        '/login': (context) => const LoginScreen(),
+        '/register': (context) => const RegisterScreen(),
+
       },
     );
   }
